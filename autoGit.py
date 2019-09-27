@@ -3,10 +3,10 @@ import subprocess
 import datetime
 import os
 
-goDic="cd .git"
-insertText__= "echo '[credential]'>>config"
+#goDic="cd .git"
+insertText__= "cd .git&&echo '[credential]'>>config"
 insertText_="echo '    helper = store'>>config&&cd .."
-os.system(goDic)
+#os.system(goDic)
 os.system(insertText__)
 os.system(insertText_)
 
